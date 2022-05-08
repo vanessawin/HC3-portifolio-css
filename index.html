@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.1/css/all.css"
+        integrity="sha384-/frq1SRXYH/bSyou/HUp/hib7RVN1TawQYja658FEOodR/FQBKVqT9Ol+Oz3Olq5" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Jost&family=Lobster&family=Oleo+Script&display=swap"
+        rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+
+    <title>Vanessa Gerbelli</title>
+
+<body>
+    <header>
+        <div id="logo">
+            <img src="logo.png" alt="logo">
+        </div>
+        <ul>
+            <li>
+                <a href="https://github.com/vanessawin" target="_blank">GitHub</a>
+            </li>
+
+            <li>
+                <a href="mailto:vanessa.win@hotmail.com ">Email</a>
+            </li>
+
+            <li>
+                <a href="https://wa.me/11985901705" target="_blank">WhatsApp</a>
+            </li>
+        </ul>
+    </header>
+
+    <main>
+        <section class="container">
+
+            <div class="name">
+                <h1>Vanessa Gerbelli</h1>
+                <h5>Front and Developer</h5>
+            </div>
+
+            <div onclick="displayAbout()" id="arrow">
+                <i id="animation" class="fa-solid fa-caret-down"></i>
+            </div>
+
+            <div style="display:none;" id="about">
+                <p>Olá, me chamo Vanessa estou participando do Bootcamp
+                 Desenvolvedor FullStack Hiring Cooders #3 desenvolvido por Gama Academy com parceria Vtex. Este é o meu projeto de aquecimento CSS desenvolvido junto com professora Kai Pimemta </p>
+            </div>
+
+            <div class="form">
+                <div>
+                    <p>Deixe seu contato</p>
+                </div>
+                <form action="">
+                    <input type="text" placeholder="Digite seu email">
+                    <button>Enviar</button>
+                </form>
+
+            </div>
+        </section>
+
+    </main>
+    <script>
+        function displayAbout() {
+            var arrow = document.getElementById('animation');
+            arrow.classList.toggle('rotate');
+            
+            var display = document.getElementById('about');
+            display.classList.toggle('active');
+        }
+    </script>
+</body>
+
+</html>
